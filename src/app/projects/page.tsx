@@ -18,7 +18,7 @@ link: "https://colab.research.google.com/drive/11lDBSdH3TmHvnMJaerCVdh2BxaGMpUSC
 title: "Top-Down Racer (Canvas Game)",
 description: "Fast arcade racer with nitro, traffic, pickups, and a best-score tracker.",
 tags: ["HTML", "Canvas", "Game"],
-link: "/topdownracer", // live demo inside portfolio
+link: "https://edissongp11.github.io/TopDownRacer-Game/", // live demo inside portfolio
 repo: "https://edissongp11.github.io/TopDownRacer-Game/", // GitHub repo
 },
 ];
