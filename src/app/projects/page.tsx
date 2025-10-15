@@ -3,16 +3,23 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
 {
-title: "AI Study Buddy Platform",
-description: "LLM‑powered study helper with spaced repetition and notes.",
-tags: ["Next.js", "OpenAI", ".NET"],
-link: "#"
+title: "Mini Football Heads (Web Game)",
+description: "Arcade soccer heads game. Physics, keyboard controls, goals, and scoring.",
+tags: ["Next.js", "OpenAI", ".NET", "Blazor"],
+link: "https://github.com/EdissonGP11/MiniHeads-Game.git"
 },
 {
 title: "Spectral Analysis of Novel String Instrument",
 description: "Python/Numba DSP for decay constants and resonance mapping.",
 tags: ["Python", "Numba", "DSP"],
-link: "#"
+link: "https://colab.research.google.com/drive/11lDBSdH3TmHvnMJaerCVdh2BxaGMpUSC?usp=sharing"
+},
+{
+title: "Top-Down Racer (Canvas Game)",
+description: "Fast arcade racer with nitro, traffic, pickups, and a best-score tracker.",
+tags: ["HTML", "Canvas", "Game"],
+link: "/topdownracer", // live demo inside portfolio
+repo: "https://github.com/EdissonGP11/TopDownRacer-Game", // GitHub repo
 },
 ];
 

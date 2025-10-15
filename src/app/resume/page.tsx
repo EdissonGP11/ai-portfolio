@@ -10,7 +10,7 @@ className="w-full h-[80vh]"
 title="Resume PDF"
 />
 </div>
-<a href="/Resume.pdf" download className="inline-block mt-4 px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400">Download PDF</a>
+<a href="/Resume.pdf" download className="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40">Download PDF</a>
 </div>
 );
 }

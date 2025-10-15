@@ -1,6 +1,5 @@
-import Image from "next/image";
-import AIChat from "../components/AIChat";
-import AIResumeInsights from "../components/AIResumeInsights";
+import AIChat from "@/components/AIChat";
+import AIResumeInsights from "@/components/AIResumeInsights";
 
 
 export default function HomePage() {
@@ -21,8 +20,28 @@ GPU compute, .NET, and crafting clean, accessible web experiences.
 <a className="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40" href="/contact">Contact</a>
 </div>
 </div>
-<div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
-<Image src="/headshot.jpg" alt="Profile" fill className="object-cover" />
+{/* Resume CTA (no profile photo) */}
+<div className="rounded-2xl border border-white/10 p-5 bg-black/30">
+<h2 className="text-2xl font-semibold">Grab my resume</h2>
+<p className="text-sm text-white/70 mt-2">
+Quick snapshot of my education, projects, and technical skills. Updated regularly.
+</p>
+<div className="mt-5 flex flex-wrap items-center gap-3">
+<a
+href="/Resume.pdf"
+download
+className="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40"
+>
+Download PDF
+</a>
+<a
+href="/resume"
+className="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40"
+>
+View online
+</a>
+</div>
+<p className="mt-3 text-xs text-white/50">PDF served from <code>/public/Resume.pdf</code></p>
 </div>
 </section>
 
