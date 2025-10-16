@@ -4,28 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Root color tokens */
+/* Force dark theme colors globally */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-
-  /* Optional accent colors (for buttons, links, etc.) */
-  --accent: #0ea5e9; /* sky-500 */
-  --accent-hover: #38bdf8; /* sky-400 */
-
-  /* Smooth scrolling for the whole site */
+  --background: #000000;   /* Always black background */
+  --foreground: #fafafa;   /* Light text */
+  --accent: #0ea5e9;
+  --accent-hover: #38bdf8;
   scroll-behavior: smooth;
 }
 
-/* Dark mode automatically activates if the user prefers dark scheme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b0b0c;
-    --foreground: #fafafa;
-  }
-}
-
-/* Optional Tailwind theme overrides (inline custom props) */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -33,7 +20,10 @@
   --font-mono: var(--font-geist-mono, "Fira Code", monospace);
 }
 
-/* Base body styling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -42,11 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Optional styling tweaks for better spacing */
-html {
-  scroll-behavior: smooth;
-}
-
+/* optional link styling */
 a {
   color: var(--accent);
   text-decoration: none;
