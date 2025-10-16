@@ -12,7 +12,7 @@ export default function AIChat() {
     const lower = prompt.toLowerCase();
 
     if (lower.includes("project")) {
-      return "You can explore Edisson’s featured projects on the Projects page — they include the AI Study Buddy, Spectral Analysis, Top-Down Racer, and Mini Football Heads!";
+      return "You can explore Edisson’s featured projects on the Projects page — they include the Spectral Analysis Reasearch, Top-Down Racer, and Mini Football Heads!";
     }
     if (lower.includes("skill")) {
       return "Edisson’s key skills include Next.js, .NET, Python (Numba/CUDA), Tailwind CSS, OpenAI API integration, and creative front-end design with React.";
